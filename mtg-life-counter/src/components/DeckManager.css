@@ -1,0 +1,253 @@
+.deck-manager {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  height: calc(100vh - 120px);
+}
+
+.deck-sidebar {
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.create-deck {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.create-deck h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+}
+
+.create-deck input,
+.create-deck select,
+.create-deck button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.create-deck button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-deck button:hover {
+  background: #1976d2;
+}
+
+.deck-list h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.deck-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 2px solid transparent;
+}
+
+.deck-item:hover {
+  border-color: #2196f3;
+}
+
+.deck-item.selected {
+  border-color: #2196f3;
+  background: #e3f2fd;
+}
+
+.deck-name {
+  flex: 1;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.deck-format {
+  font-size: 11px;
+  color: #666;
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.delete-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #ffcdd2;
+  color: #c62828;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.deck-content {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.deck-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.deck-header h2 {
+  margin: 0;
+  flex: 1;
+}
+
+.deck-format-badge {
+  font-size: 12px;
+  color: #666;
+  background: #f5f5f5;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.deck-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.deck-actions button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.deck-actions button:hover {
+  background: #f5f5f5;
+}
+
+.add-card {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.add-card input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-card input[type="number"] {
+  width: 70px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-card button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.deck-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-count {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.deck-card-line {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.deck-card-line:hover {
+  background: #f0f0f0;
+}
+
+.deck-card-line .card-count {
+  font-weight: bold;
+  color: #333;
+  min-width: 30px;
+  margin: 0;
+}
+
+.deck-card-line .card-name {
+  flex: 1;
+}
+
+.card-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.card-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card-controls button:first-child {
+  background: #4caf50;
+  color: white;
+}
+
+.card-controls button:last-child {
+  background: #ffcdd2;
+  color: #c62828;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
+
+.no-deck-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+}

@@ -1,0 +1,46 @@
+.life-counter {
+  padding: 16px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.reset-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  background: #d32f2f;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.commander-legend {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.commander-legend h3 {
+  margin: 0 0 8px 0;
+}
+
+.commander-legend p {
+  margin: 0;
+  color: #666;
+}

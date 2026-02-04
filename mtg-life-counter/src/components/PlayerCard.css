@@ -1,0 +1,207 @@
+.player-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.player-card.critical {
+  border-color: #f44336;
+  background: #fff5f5;
+}
+
+.player-card.poison {
+  border-color: #4caf50;
+}
+
+.player-name {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid #eee;
+  padding: 8px 0;
+  margin-bottom: 12px;
+  text-align: center;
+  background: transparent;
+}
+
+.player-name:focus {
+  outline: none;
+  border-bottom-color: #2196f3;
+}
+
+.life-section {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.life-display {
+  margin-bottom: 12px;
+}
+
+.life-value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.life-label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.life-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.life-controls button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.life-controls button:nth-child(1),
+.life-controls button:nth-child(2) {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.life-controls button:nth-child(3),
+.life-controls button:nth-child(4) {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.life-controls button:hover {
+  transform: scale(1.05);
+}
+
+.poison-section {
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #e8f5e9;
+  border-radius: 8px;
+}
+
+.poison-display.critical {
+  color: #c62828;
+}
+
+.poison-value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.poison-label {
+  display: block;
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.poison-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.poison-controls button {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.poison-controls button:first-child {
+  background: #4caf50;
+  color: white;
+}
+
+.poison-controls button:last-child {
+  background: #81c784;
+  color: white;
+}
+
+.commander-section {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.commander-section h4 {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.commander-trackers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.commander-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+.commander-tracker.dead {
+  background: #ffebee;
+}
+
+.commander-source {
+  font-size: 13px;
+  color: #333;
+}
+
+.commander-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.commander-damage {
+  font-weight: bold;
+  min-width: 28px;
+  text-align: center;
+}
+
+.commander-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.commander-controls button:first-child {
+  background: #ff9800;
+  color: white;
+}
+
+.commander-controls button:last-child {
+  background: #ffc107;
+  color: #333;
+}
